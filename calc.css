@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2a4f6a;
+}
+
+.calculator {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "box box box box"
+    "AC C percent div"
+    "seven eight nine mul"
+    "four five six min"
+    "one two three plus"
+    "zero zero dot eq";
+  background: #000;
+  width: 500px;
+  height: 600px;
+  padding: 2rem;
+}
+
+.box {
+  background: #fff;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: row-reverse;
+  font-size: 5rem;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 60px;
+  background: #4d4d4d;
+  border-radius: 10px;
+}
+
+.zero {
+  grid-area: zero;
+  width: auto;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.AC {
+  grid-area: AC;
+  background: #bfb6b6;
+}
+.percent {
+  grid-area: percent;
+  background: #bfb6b6;
+}
+.box {
+  grid-area: box;
+}
+.C {
+  grid-area: C;
+  background: #bfb6b6;
+}
+.plus {
+  grid-area: plus;
+  background: #d67036;
+}
+.min {
+  grid-area: min;
+  background: #d67036;
+}
+.mul {
+  grid-area: mul;
+  background: #d67036;
+}
+.div {
+  grid-area: div;
+  background: #d67036;
+}
+.eq {
+  grid-area: eq;
+  background: #d67036;
+}
+.dot {
+  grid-area: dot;
+}
